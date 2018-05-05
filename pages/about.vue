@@ -58,7 +58,7 @@
 <style lang="scss" scoped>
 
 .lead {
-  font-size: 1.5vw;
+  font-size: 1.2rem;
 }
 
 .history {

@@ -24,7 +24,7 @@
 <style lang="scss" scoped>
 
 .lead {
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   margin: 4rem 0;
   text-align: center;
 }
@@ -32,10 +32,11 @@
 .contactList {
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 
   li {
-    margin: 0 2rem;
+    margin: 1rem 2rem;
   }
 
   a {
@@ -45,13 +46,19 @@
     box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .5);
     color: #ccc;
     display: flex;
-    font-size: 4rem;
-    height: 7rem;
+    font-size: 3rem;
+    height: 5rem;
     justify-content: center;
     line-height: 1;
     text-decoration: none;
     transition: all .3s;
-    width: 7rem;
+    width: 5rem;
+
+    @media (min-width: 768px) {
+      font-size: 4rem;
+      height: 7rem;
+      width: 7rem;
+    }
 
     &:hover {
       background: #ccc;

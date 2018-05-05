@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-    <GlobalNavi />
+    <GlobalNavi :class="{ 'globalNavi--shown': isNaviShown }" />
     <div class="pageWrapper">
+      <button class="toggleNaviButton" @click="toggleNavi"><i class="fas fa-bars"></i></button>
       <nuxt/>
     </div>
   </div>
@@ -12,6 +13,23 @@ import GlobalNavi from '~/components/GlobalNavi.vue'
 export default {
   components: {
     GlobalNavi
+  },
+  data() {
+    return {
+      isNaviShown: false
+    }
+  },
+  methods: {
+    toggleNavi() {
+      this.isNaviShown = !this.isNaviShown
+    }
+  },
+  watch: {
+    $route(to, from) {
+      if (to.path !== from.path) {
+        this.isNaviShown = false
+      }
+    }
   }
 }
 </script>
@@ -39,8 +57,38 @@ body {
 }
 
 .container {
-  padding-left: 16rem;
-  position: relative;
+
+  /deep/ .globalNavi {
+    transform: translateX(-100%);
+    transition: all .3s;
+
+    &--shown {
+      transform: translateX(0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 16rem;
+    position: relative;
+
+    /deep/ .globalNavi {
+      transform: none;
+    }
+  }
+}
+
+.toggleNaviButton {
+  color: #fff;
+  font-size: 2rem;
+  margin: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .pageWrapper {
@@ -69,9 +117,13 @@ body {
   z-index: 1;
 
   &:not(.indexPage) {
-    margin: 0 auto;
-    max-width: calc(800px + 3rem);
-    padding: 3rem;
+    padding: 4rem 1rem;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      max-width: calc(800px + 3rem);
+      padding: 3rem;
+    }
   }
 
   &__section {
@@ -79,17 +131,26 @@ body {
   }
 
   &__title {
-    font-size: 6vw;
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: .25em;
     margin-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 6vw;
+    }
   }
 
   &__subTitle {
-    font-size: 4vw;
+    font-size: 2rem;
     font-weight: bold;
+    margin: 1rem 0;
+
+    @media (min-width: 768px) {
+      font-size: 4vw;
+    }
   }
 
   &-enter-active, &-leave-active {

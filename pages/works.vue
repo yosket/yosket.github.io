@@ -85,9 +85,12 @@
 <style lang="scss" scoped>
 
 .products {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -2rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2rem;
+  }
 }
 
 .product {
@@ -97,9 +100,14 @@
   color: #666;
   display: flex;
   flex-direction: column;
-  margin: 0 0 2rem 2rem;
-  padding: 2rem;
-  width: calc((100% - 4rem) / 2);
+  margin: 0 0 1rem;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    margin: 0 0 2rem 2rem;
+    padding: 2rem;
+    width: calc((100% - 4rem) / 2);
+  }
 
   > :nth-last-of-type(2) {
     flex: 1;
