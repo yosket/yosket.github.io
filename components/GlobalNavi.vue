@@ -12,8 +12,8 @@
       <ul>
         <li><nuxt-link to="/">Home</nuxt-link></li>
         <li><nuxt-link to="/about">About</nuxt-link></li>
-        <li><a href="#">Works</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><nuxt-link to="/works">Works</nuxt-link></li>
+        <li><nuxt-link to="/contact">Contact</nuxt-link></li>
       </ul>
     </nav>
     <footer class="footer">
