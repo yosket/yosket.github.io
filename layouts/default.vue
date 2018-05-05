@@ -97,20 +97,29 @@ body {
 
 .pageWrapper {
   min-height: 100vh;
-  background: url('~assets/bg.jpg') no-repeat center center fixed / cover;
   color: #fff;
-  position: relative;
+  overflow: hidden;
   width: 100%;
 
   &::before {
+  background: url('~assets/bg.jpg') no-repeat center center fixed / cover;
+    content: '';
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  &::after {
     background: #FC5C7D;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     content: '';
-    height: 100%;
+    height: 100vh;
     left: 0;
     opacity: .5;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
   }
