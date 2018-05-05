@@ -87,6 +87,7 @@ body {
   padding: 1rem;
   position: fixed;
   right: 0;
+  text-shadow: 0 0px 1px rgba(0, 0, 0, .5);
   top: 0;
   z-index: 2;
 
@@ -102,13 +103,18 @@ body {
   width: 100%;
 
   &::before {
-  background: url('~assets/bg.jpg') no-repeat center center fixed / cover;
+    background: url('~assets/bg.jpg') no-repeat center center fixed / auto 100%;
     content: '';
+    display: block;
     height: 100vh;
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
+
+    @media (min-width: 768px) {
+      background: url('~assets/bg.jpg') no-repeat center center fixed / cover;
+    }
   }
 
   &::after {
@@ -116,6 +122,7 @@ body {
     background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     content: '';
+    display: block;
     height: 100vh;
     left: 0;
     opacity: .5;
