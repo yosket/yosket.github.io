@@ -70,8 +70,8 @@ body {
 
   &:not(.indexPage) {
     margin: 0 auto;
-    max-width: 800px;
-    padding: 3rem 0;
+    max-width: calc(800px + 3rem);
+    padding: 3rem;
   }
 
   &__section {
