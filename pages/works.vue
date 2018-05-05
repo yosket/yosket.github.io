@@ -7,6 +7,7 @@
         <small>2018</small>
         <h3>白猫テニス ベストメンバーズ</h3>
         <p>アプリ「白猫テニス」で、あなたが持っているキャラの中から最適な組み合わせを判定します。</p>
+        <p class="product__work">Planning / Dedign / Cording</p>
         <ul class="tagList">
           <li>Nuxt.js</li>
           <li>Vue.js</li>
@@ -21,6 +22,7 @@
         <small>2017</small>
         <h3>PitFit</h3>
         <p>あなたの肌が探し求めていた洗顔料が見つかります。あなたは本当に自分の肌にあった洗顔料を選べていますか？乾燥、肌荒れ、ニキビなどのお肌の悩みは、実はあなたの選んだ洗顔料が原因かも。</p>
+        <p class="product__work">Planning / Dedign / Cording</p>
         <ul class="tagList">
           <li>Ionic 2</li>
           <li>Angular</li>
@@ -34,6 +36,7 @@
         <small>2016</small>
         <h3>Tetra - 最大4人制グループチャット型SNS</h3>
         <p>人生において大切な友情は4人でいい。同じ趣味・仕事・悩み・価値観・地域など、あなたを求める人たちと出会い、相談相手・いつでも会える友達・そして一生の友人へ。最大4人制グループチャット型SNS "Tetra" で、本当に大切な友達を作ろう。</p>
+        <p class="product__work">Planning / Dedign / Cording</p>
         <ul class="tagList">
           <li>AngularJS</li>
           <li>Angular Material</li>
@@ -47,6 +50,7 @@
         <small>2016</small>
         <h3>bandally</h3>
         <p>Your favorite spot sharing site that connects the world. Let one of the world through travel. Also use it to help in the activation of the local. This can be explained and search of the spot in a variety of languages.</p>
+        <p class="product__work">Planning / Dedign / Cording</p>
         <ul class="tagList">
           <li>AngularJS</li>
           <li>Bootstrap 3</li>
@@ -60,6 +64,7 @@
         <small>2016</small>
         <h3>malo - ボイスリクエストコミュニティ</h3>
         <p>魅力的な声のマリスト（ボイス配信者）を探して、言って欲しい台詞や歌をリクエスト！！今までに無い新しい価値を提供していくアプリです。</p>
+        <p class="product__work">Planning / Dedign / Cording</p>
         <ul class="tagList">
           <li>Ionic</li>
           <li>AngularJS</li>
@@ -72,6 +77,7 @@
         <small>2015</small>
         <h3>Bridges - The broken links finder.</h3>
         <p>All the links that exist in your web site to list up, investigate to see if you can access.</p>
+        <p class="product__work">Planning / Dedign / Cording</p>
         <ul class="tagList">
           <li>AngularJS</li>
           <li>PHP</li>
@@ -109,8 +115,9 @@
     width: calc((100% - 4rem) / 2);
   }
 
-  > :nth-last-of-type(2) {
-    flex: 1;
+  &__work {
+    color: #999;
+    font-style: italic;
   }
 
   img {
@@ -138,7 +145,7 @@
   }
 
   .tagList {
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 auto;
     font-size: .8rem;
   }
 
