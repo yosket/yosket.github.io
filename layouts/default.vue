@@ -116,16 +116,19 @@ body {
 }
 
 .page {
+  padding: 4rem 1rem;
   position: relative;
   z-index: 1;
 
+  @media (min-width: 768px) {
+    padding: 3rem;
+  }
+
   &:not(.indexPage) {
-    padding: 4rem 1rem;
 
     @media (min-width: 768px) {
       margin: 0 auto;
       max-width: calc(800px + 3rem);
-      padding: 3rem;
     }
   }
 

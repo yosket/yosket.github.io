@@ -16,7 +16,12 @@
 }
 
 .topMessage {
-  font-size: 3.5vw;
+  font-size: 3.5rem;
   font-weight: bold;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 4vw;
+  }
 }
 </style>
