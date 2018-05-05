@@ -83,7 +83,8 @@ body {
   border: none;
   color: #fff;
   font-size: 2rem;
-  margin: 1rem;
+  line-height: 1;
+  padding: 1rem;
   position: fixed;
   right: 0;
   top: 0;
