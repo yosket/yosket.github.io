@@ -2,10 +2,10 @@
   <div class="globalNavi">
     <header class="bland">
       <h1>
-        <a href="/">
+        <nuxt-link to="/">
           <span>Web Developer</span>
           <span>Yosuke Tanaka</span>
-        </a>
+        </nuxt-link>
       </h1>
     </header>
     <nav class="navi">
@@ -37,7 +37,7 @@
   position: fixed;
   top: 0;
   width: 16rem;
-  z-index: 1;
+  z-index: 9999;
 
   a {
     color: #666;
