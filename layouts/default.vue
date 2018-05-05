@@ -58,7 +58,7 @@ body {
 
 .container {
 
-  /deep/ .globalNavi {
+  >>> .globalNavi {
     transform: translateX(-100%);
     transition: all .3s;
 
@@ -71,7 +71,7 @@ body {
     padding-left: 16rem;
     position: relative;
 
-    /deep/ .globalNavi {
+    >>> .globalNavi {
       transform: none;
     }
   }
