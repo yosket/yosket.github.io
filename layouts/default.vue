@@ -78,6 +78,9 @@ body {
 }
 
 .toggleNaviButton {
+  appearance: none;
+  background: transparent;
+  border: none;
   color: #fff;
   font-size: 2rem;
   margin: 1rem;
