@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'yosket.github.io',
+    title: 'Yosuke Tanaka - Freelance Web Developer in Tokyo, Japan',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: '東京都新宿区のフリーランスウェブデベロッパー、田中庸介のサイトです。お仕事のご依頼やご質問等、なんでもお気軽にお問い合わせください。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
