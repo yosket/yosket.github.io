@@ -17,7 +17,7 @@
       </ul>
     </nav>
     <footer class="footer">
-      <p><small>&copy; Yosuke Tanaka 2018</small></p>
+      <p><small>&copy; Yosuke Tanaka {{ new Date().getFullYear() }}</small></p>
     </footer>
   </div>
 </template>
@@ -26,7 +26,6 @@
 
 .globalNavi {
   background: #fff;
-  box-shadow: .125rem 0 .25rem rgba(0, 0, 0, .5);
   color: #666;
   display: flex;
   flex-direction: column;
@@ -46,19 +45,32 @@
 }
 
 .bland {
+  border-bottom: 1px solid #eee;
+  margin: -2rem;
   text-align: center;
+
+  a {
+    display: block;
+    padding: 1rem 0;
+    transition: all .3s;
+
+    &:hover {
+      background: #666;
+      color: #fff;
+    }
+  }
 
   span {
     display: block;
 
     &:nth-of-type(1) {
-      font-size: 1.2rem;
-      margin: 1rem;
+      font-weight: bold;
+      margin: 1rem 0 0;
     }
 
     &:nth-of-type(2) {
-      font-size: 1.5rem;
-      margin: 1rem;
+      font-size: 1.8rem;
+      margin: 0 0 1rem;
     }
   }
 }
@@ -70,11 +82,19 @@
     font-size: 1.5rem;
     margin: 1rem 0;
     padding: 0 1rem;
+
+    &.nuxt-link-exact-active {
+      font-weight: bold;
+    }
   }
 }
 
 .footer {
+  border-top: 1px solid #eee;
+  color: #ccc;
   font-size: .8rem;
+  margin: -2rem;
+  padding: 1rem;
   text-align: center;
 }
 </style>
