@@ -70,7 +70,7 @@ body {
 
   &:not(.indexPage) {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
     padding: 3rem 0;
   }
 
@@ -104,6 +104,18 @@ body {
   &-leave-to {
     opacity: 0;
     transform: translateX(-100%);
+  }
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    border: 1px solid;
+    border-radius: .25em;
+    margin: 0 .5em .5em 0;
+    padding: .25em .5em;
   }
 }
 </style>

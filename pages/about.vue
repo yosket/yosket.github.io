@@ -59,18 +59,6 @@
   font-size: 1.5vw;
 }
 
-.tagList {
-  display: flex;
-  flex-wrap: wrap;
-
-  li {
-    border: 1px solid;
-    border-radius: .25em;
-    margin: 0 .5em .5em 0;
-    padding: .25em .5em;
-  }
-}
-
 .history {
 
   dt {
