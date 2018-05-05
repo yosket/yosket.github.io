@@ -1,10 +1,23 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="container">
+    <GlobalNavi />
+    <div class="pageWrapper">
+      <nuxt/>
+    </div>
   </div>
 </template>
 
-<style>
+<script>
+import GlobalNavi from '~/components/GlobalNavi.vue'
+export default {
+  components: {
+    GlobalNavi
+  }
+}
+</script>
+
+
+<style lang="scss">
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
@@ -21,32 +34,34 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.container {
+  padding-left: 16rem;
+  position: relative;
 }
 
-.button--green:hover {
+.pageWrapper {
+  min-height: 100vh;
+  background: url('~assets/bg.jpg') no-repeat center center / cover;
   color: #fff;
-  background-color: #3b8070;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.page {
+  position: relative;
+  z-index: 1;
 }
 </style>
