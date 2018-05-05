@@ -34,6 +34,10 @@ html {
   margin: 0;
 }
 
+body {
+  line-height: 1.5;
+}
+
 .container {
   padding-left: 16rem;
   position: relative;
@@ -41,7 +45,7 @@ html {
 
 .pageWrapper {
   min-height: 100vh;
-  background: url('~assets/bg.jpg') no-repeat center center / cover;
+  background: url('~assets/bg.jpg') no-repeat center center fixed / cover;
   color: #fff;
   position: relative;
   width: 100%;
@@ -63,5 +67,43 @@ html {
 .page {
   position: relative;
   z-index: 1;
+
+  &:not(.indexPage) {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 3rem 0;
+  }
+
+  &__section {
+    margin: 2rem 0;
+  }
+
+  &__title {
+    font-size: 6vw;
+    font-weight: bold;
+    letter-spacing: .25em;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subTitle {
+    font-size: 4vw;
+    font-weight: bold;
+  }
+
+  &-enter-active, &-leave-active {
+    transition: all .5s;
+  }
+
+  &-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  &-leave-to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 </style>
