@@ -13,6 +13,10 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.12/css/all.css', integrity: 'sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9', crossorigin: 'anonymous' }
+    ],
+    script: [
+      { src: 'https://use.typekit.net/hbn7tws.js' },
+      { innerHTML: 'try{Typekit.load({ async: true });}catch(e){}' }
     ]
   },
   /*
