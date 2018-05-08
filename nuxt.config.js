@@ -11,7 +11,7 @@ module.exports = {
       { name: 'google-site-verification', content: 'kRhaMZx82slgxcA7fWoALNVuzIxtbKonZ86p65pyiKw' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/jpg', href: '/favicon.jpg' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.12/css/all.css', integrity: 'sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9', crossorigin: 'anonymous' }
     ],
