@@ -3,6 +3,7 @@
     <div class="topMessage">
       Web Developer in Tokyo, Japan
     </div>
+    <h2>Yosuke Tanaka</h2>
   </div>
 </template>
 
@@ -11,17 +12,26 @@
 .indexPage {
   align-items: center;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
 }
 
 .topMessage {
   font-size: 3.5rem;
-  font-weight: bold;
   line-height: 1.2;
 
   @media (min-width: 768px) {
-    font-size: 4vw;
+    font-size: 5vw;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  @media (min-width: 768px) {
+    font-size: 2.5vw;
   }
 }
 </style>

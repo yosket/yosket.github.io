@@ -40,6 +40,7 @@ export default {
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, "source-han-sans-japanese", YuGothic, Arial, "メイリオ", Meiryo, sans-serif;
   font-size: 16px;
+  font-weight: 100;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -111,7 +112,7 @@ body {
     display: block;
     height: 100vh;
     left: 0;
-    opacity: .75;
+    opacity: .5;
     position: fixed;
     top: 0;
     width: 100%;
