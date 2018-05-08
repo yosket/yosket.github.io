@@ -3,6 +3,7 @@
     <header class="bland">
       <h1>
         <nuxt-link to="/">
+          <img src="~assets/photo.jpg" alt="Yosuke Tanaka">
           <span>Web Developer</span>
           <span>Yosuke Tanaka</span>
         </nuxt-link>
@@ -58,6 +59,13 @@
       background: #666;
       color: #fff;
     }
+  }
+
+  img {
+    border-radius: 50%;
+    height: 160px;
+    object-fit: cover;
+    width: 160px;
   }
 
   span {

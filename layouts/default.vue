@@ -111,7 +111,7 @@ body {
     display: block;
     height: 100vh;
     left: 0;
-    opacity: .5;
+    opacity: .75;
     position: fixed;
     top: 0;
     width: 100%;
