@@ -2,6 +2,7 @@
   <div class="container">
     <GlobalNavi :class="{ 'globalNavi--shown': isNaviShown }" />
     <div class="pageWrapper">
+      <video src="~assets/bg.mp4" loop muted autoplay playsinline></video>
       <button class="toggleNaviButton" @click="toggleNavi"><i class="fas fa-bars"></i></button>
       <nuxt/>
     </div>
@@ -102,30 +103,24 @@ body {
   overflow: hidden;
   width: 100%;
 
-  &::before {
-    background: url('~assets/bg.jpg') no-repeat center center / auto 100%;
-    content: '';
-    display: block;
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    @media (min-width: 768px) {
-      background: url('~assets/bg.jpg') no-repeat center center / cover;
-    }
-  }
-
   &::after {
-    background: #FC5C7D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right bottom, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right bottom, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     content: '';
     display: block;
     height: 100vh;
     left: 0;
     opacity: .5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  video {
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
     position: fixed;
     top: 0;
     width: 100%;
