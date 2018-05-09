@@ -6,7 +6,7 @@ module.exports = {
     title: 'Yosuke Tanaka - Freelance Web Developer in Tokyo, Japan',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: '東京都新宿区のフリーランスウェブデベロッパー、田中庸介のサイトです。お仕事のご依頼やご質問等、なんでもお気軽にお問い合わせください。' },
       { name: 'google-site-verification', content: 'kRhaMZx82slgxcA7fWoALNVuzIxtbKonZ86p65pyiKw' }
     ],

@@ -33,6 +33,7 @@
   height: 100%;
   justify-content: space-between;
   left: 0;
+  overflow: auto;
   padding: 2rem;
   position: fixed;
   top: 0;
@@ -84,6 +85,11 @@
 }
 
 .navi {
+  padding: 1rem 0;
+
+  ul {
+    padding: 2rem 0;
+  }
 
   a {
     display: block;
