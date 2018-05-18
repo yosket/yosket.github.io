@@ -49,7 +49,8 @@ module.exports = {
     [
       '@nuxtjs/google-analytics', {
         id: 'UA-118743049-1'
-      }
+      },
+      '@nuxtjs/dotenv'
     ]
   ],
   env: {
