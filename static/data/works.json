@@ -1,0 +1,64 @@
+{
+  "works": [
+    {
+      "name": "白猫テニス ベストメンバーズ",
+      "imageFileName": "shironeko-tennis-best-members.png",
+      "year": 2018,
+      "description": "アプリ「白猫テニス」で、あなたが持っているキャラの中から最適な組み合わせを判定します。",
+      "work": "Planning / Dedigning / Cording",
+      "tags": ["Nuxt.js", "Vue.js", "Bootstrap 4", "Node.js", "Heroku"],
+      "url": "https://shironekotennis.club",
+      "isLive": true
+    },
+    {
+      "name": "PitFit",
+      "imageFileName": "pitfit.png",
+      "year": 2017,
+      "description": "あなたの肌が探し求めていた洗顔料が見つかります。あなたは本当に自分の肌にあった洗顔料を選べていますか？乾燥、肌荒れ、ニキビなどのお肌の悩みは、実はあなたの選んだ洗顔料が原因かも。",
+      "work": "Planning / Dedigning / Cording",
+      "tags": ["Ionic 2", "Angular", "Ruby on Rails 5", "Heroku"],
+      "url": "https://pitfit.net",
+      "isLive": true
+    },
+    {
+      "name": "Tetra - 最大4人制グループチャット型SNS",
+      "imageFileName": "tetra.png",
+      "year": 2016,
+      "description": "人生において大切な友情は4人でいい。同じ趣味・仕事・悩み・価値観・地域など、あなたを求める人たちと出会い、相談相手・いつでも会える友達・そして一生の友人へ。最大4人制グループチャット型SNS",
+      "work": "Planning / Dedigning / Cording",
+      "tags": ["AngularJS", "Angular Material", "Ruby on Rails 5", "Heroku"],
+      "url": "https://tetra-mates.com/",
+      "isLive": true
+    },
+    {
+      "name": "bandally",
+      "imageFileName": "bandally.png",
+      "year": 2016,
+      "description": "Your favorite spot sharing site that connects the world. Let one of the world through travel. Also use it to help in the activation of the local. This can be explained and search of the spot in a variety of languages.",
+      "work": "Planning / Dedigning / Cording",
+      "tags": ["AngularJS", "Bootstrap 3", "Parse Server"],
+      "url": "https://bandally.herokuapp.com/",
+      "isLive": true
+    },
+    {
+      "name": "malo - ボイスリクエストコミュニティ",
+      "imageFileName": "malo.png",
+      "year": 2016,
+      "description": "魅力的な声のマリスト（ボイス配信者）を探して、言って欲しい台詞や歌をリクエスト！！今までに無い新しい価値を提供していくアプリです。",
+      "work": "Planning / Dedigning / Cording",
+      "tags": ["Ionic", "AngularJS", "Parse Server"],
+      "url": "https://itunes.apple.com/jp/app/malo-%E3%83%9C%E3%82%A4%E3%82%B9%E3%83%AA%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3/id1082600552",
+      "isLive": true
+    },
+    {
+      "name": "Bridges - The broken links finder.",
+      "imageFileName": "bridges.png",
+      "year": 2015,
+      "description": "All the links that exist in your web site to list up, investigate to see if you can access.",
+      "work": "Planning / Dedigning / Cording",
+      "tags": ["AngularJS", "PHP"],
+      "url": "https://fallen-bridges.com/",
+      "isLive": true
+    }
+  ]
+}

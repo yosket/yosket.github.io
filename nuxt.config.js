@@ -51,5 +51,8 @@ module.exports = {
         id: 'UA-118743049-1'
       }
     ]
-  ]
+  ],
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  }
 }

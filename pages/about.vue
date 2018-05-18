@@ -10,50 +10,34 @@
     <div class="page__section">
       <h3 class="page__subTitle">Like</h3>
       <ul class="tagList">
-        <li>Vue.js</li>
-        <li>Angular</li>
-        <li>Nuxt.js</li>
-        <li>Parse</li>
-        <li>Firebase</li>
-        <li>Ruby on Rails</li>
-        <li>Sass</li>
-        <li>Node.js</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>Heroku</li>
+        <li :key="tag" v-for="tag in tags">{{ tag }}</li>
       </ul>
     </div>
     <div class="page__section">
       <h3 class="page__subTitle">History</h3>
       <dl class="history">
-        <dt>1980 -</dt>
-        <dd>愛知県安城市に生まれる</dd>
-        <dt>1996 -</dt>
-        <dd>父親にねだり初めてのPCをゲット。インターネットに触れ、夜通しネットサーフィンやチャットに明け暮れる</dd>
-        <dt>1997 -</dt>
-        <dd>独学でWebサイト制作を開始</dd>
-        <dt>1999 -</dt>
-        <dd>進学を機に上京</dd>
-        <dt>2004 -</dt>
-        <dd>就職せずにバンドマンとして生きていくことを決意</dd>
-        <dt>2007 -</dt>
-        <dd>結核性胸膜炎を発症。1年におよぶ自宅療養生活</dd>
-        <dt>2009 -</dt>
-        <dd>大手コールセンターでのアルバイト中に、電話応対用の効率化ツールをいくつも開発。やがて全国のセンターで使われるようになる</dd>
-        <dt>2011 -</dt>
-        <dd>念願のCDデビュー</dd>
-        <dt>2012 -</dt>
-        <dd>バンドの夢潰える</dd>
-        <dt>2014 -</dt>
-        <dd>中目黒のWeb制作会社に就職</dd>
-        <dt>2015 -</dt>
-        <dd>六本木のソーシャルゲーム会社に転職。1年弱勤めたのち、友人と二人でWebサービス会社を起業</dd>
-        <dt>2017 -</dt>
-        <dd>フリーランスへ転向</dd>
+        <template v-for="item in history">
+          <dt :key="item.year">{{ item.year }} -</dt>
+          <dd :key="item.body">{{ item.body }}</dd>
+        </template>
       </dl>
     </div>
   </div>
 </template>
+
+<script>
+import axios from '~/plugins/axios'
+export default {
+  asyncData() {
+    return Promise.all([
+      axios.get('/data/tags.json'),
+      axios.get('/data/history.json')
+    ])
+      .then((results) => Object.assign(...results.map(r => r.data)))
+      .catch((error) => console.error(error))
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 
