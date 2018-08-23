@@ -1,15 +1,17 @@
 {
   "tags": [
-    "Vue.js",
-    "Angular",
-    "Nuxt.js",
-    "Parse",
-    "Firebase",
-    "Ruby on Rails",
-    "Sass",
-    "Node.js",
     "JavaScript",
     "TypeScript",
+    "Node.js",
+    "Vue.js",
+    "Nuxt.js",
+    "Angular",
+    "Sass",
+    "Ruby",
+    "Ruby on Rails",
+    "PHP",
+    "WordPress",
+    "Firebase",
     "Heroku"
   ]
 }
