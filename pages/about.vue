@@ -10,7 +10,7 @@
     <div class="page__section">
       <h3 class="page__subTitle">Like</h3>
       <ul class="tagList">
-        <li :key="tag" v-for="tag in tags">{{ tag }}</li>
+        <li v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
     </div>
     <div class="page__section">
@@ -26,27 +26,22 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
 export default {
-  asyncData() {
-    return Promise.all([
-      axios.get('/data/tags.json'),
-      axios.get('/data/history.json')
-    ])
-      .then((results) => Object.assign(...results.map(r => r.data)))
-      .catch((error) => console.error(error))
+  async asyncData({ app }) {
+    return await Promise.all([
+      app.$axios.$get('/data/tags.json'),
+      app.$axios.$get('/data/history.json')
+    ]).then(results => Object.assign(...results))
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
 .lead {
   font-size: 1.2rem;
 }
 
 .history {
-
   dt {
     float: left;
     font-weight: bold;

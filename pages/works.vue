@@ -2,14 +2,14 @@
   <div class="page worksPage">
     <h2 class="page__title">Works</h2>
     <div class="products">
-      <div class="product" :key="work.name" v-for="work in works">
-        <img class="lazyload" :data-src="require(`~/assets/products/${work.imageFileName}`)" :alt="work.name">
+      <div v-for="work in works" :key="work.name" class="product">
+        <img :src="require(`~/assets/products/${work.imageFileName}`)" :alt="work.name">
         <small>{{ work.year }}</small>
         <h3>{{ work.name }}</h3>
         <p>{{ work.description }}</p>
         <p class="product__work">{{ work.work }}</p>
         <ul class="tagList">
-          <li :key="tag" v-for="tag in work.tags">{{ tag }}</li>
+          <li v-for="tag in work.tags" :key="tag">{{ tag }}</li>
         </ul>
         <p v-if="work.isLive"><a :href="work.url" target="_blank">Live</a></p>
       </div>
@@ -18,20 +18,15 @@
 </template>
 
 <script>
-import axios from '~/plugins/axios'
 export default {
-  asyncData() {
-    return axios.get('/data/works.json')
-      .then((response) => response.data)
-      .catch((error) => console.error(error))
+  async asyncData({ app }) {
+    return await app.$axios.$get('/data/works.json')
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
 .products {
-
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -41,8 +36,8 @@ export default {
 
 .product {
   background: #fff;
-  border-radius: .25rem;
-  box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .5);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
   color: #666;
   display: flex;
   flex-direction: column;
@@ -61,22 +56,16 @@ export default {
   }
 
   img {
-    box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, .25);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.25);
     height: auto;
     max-width: 100%;
     object-fit: cover;
     object-position: center 0;
-    opacity: 0;
-    transition: opacity .3s;
-
-    &.lazyloaded {
-      opacity: 1;
-    }
   }
 
   small {
     color: #999;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 1.5rem;
   }
 
@@ -86,25 +75,25 @@ export default {
   }
 
   p {
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 1.5rem;
   }
 
   .tagList {
     margin: 1.5rem 0 auto;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   a {
     border: 1px solid;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     color: inherit;
     display: block;
     font-size: 1rem;
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
     text-decoration: none;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:hover {
       background: #666;

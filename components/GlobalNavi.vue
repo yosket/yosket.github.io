@@ -24,7 +24,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 .globalNavi {
   background: #fff;
   color: #666;
@@ -54,7 +53,7 @@
   a {
     display: block;
     padding: 1rem 0;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &:hover {
       background: #666;
@@ -106,7 +105,7 @@
 .footer {
   border-top: 1px solid #eee;
   color: #ccc;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: -2rem;
   padding: 1rem;
   text-align: center;

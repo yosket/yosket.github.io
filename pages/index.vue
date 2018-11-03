@@ -8,7 +8,6 @@
 </template>
 
 <style lang="scss" scoped>
-
 .indexPage {
   display: flex;
   flex-direction: column;

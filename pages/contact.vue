@@ -6,23 +6,22 @@
     </p>
     <ul class="contactList">
       <li>
-        <a href="mailto:yosket87@gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="mailto:yosket87@gmail.com"><i class="far fa-envelope"/></a>
       </li>
       <li>
-        <a href="https://github.com/yosket" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/yosket" target="_blank"><i class="fab fa-github"/></a>
       </li>
       <li>
-        <a href="https://twitter.com/yosket87" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/yosket87" target="_blank"><i class="fab fa-twitter"/></a>
       </li>
       <li>
-        <a href="https://www.facebook.com/yosuke.tanaka.87" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.facebook.com/yosuke.tanaka.87" target="_blank"><i class="fab fa-facebook"/></a>
       </li>
     </ul>
   </div>
 </template>
 
 <style lang="scss" scoped>
-
 .lead {
   font-size: 1.2rem;
   margin: 4rem 0;
@@ -43,7 +42,7 @@
     align-items: center;
     background: #fff;
     border-radius: 50%;
-    box-shadow:  0 .125rem .25rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
     color: #ccc;
     display: flex;
     font-size: 3rem;
@@ -51,7 +50,7 @@
     justify-content: center;
     line-height: 1;
     text-decoration: none;
-    transition: all .3s;
+    transition: all 0.3s;
     width: 5rem;
 
     @media (min-width: 768px) {

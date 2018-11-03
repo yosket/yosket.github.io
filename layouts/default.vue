@@ -2,8 +2,8 @@
   <div class="container">
     <GlobalNavi :class="{ 'globalNavi--shown': isNaviShown }" />
     <div class="pageWrapper">
-      <video src="~assets/bg.mp4" loop muted autoplay playsinline></video>
-      <button class="toggleNaviButton" @click="toggleNavi"><i class="fas fa-bars"></i></button>
+      <video src="~assets/bg.mp4" loop muted autoplay playsinline/>
+      <button class="toggleNaviButton" @click="toggleNavi"><i class="fas fa-bars"/></button>
       <nuxt/>
     </div>
   </div>
@@ -20,16 +20,16 @@ export default {
       isNaviShown: false
     }
   },
-  methods: {
-    toggleNavi() {
-      this.isNaviShown = !this.isNaviShown
-    }
-  },
   watch: {
     $route(to, from) {
       if (to.path !== from.path) {
         this.isNaviShown = false
       }
+    }
+  },
+  methods: {
+    toggleNavi() {
+      this.isNaviShown = !this.isNaviShown
     }
   }
 }
@@ -38,7 +38,9 @@ export default {
 
 <style lang="scss">
 html {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, "source-han-sans-japanese", YuGothic, Arial, "メイリオ", Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+    'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN,
+    'source-han-sans-japanese', YuGothic, Arial, 'メイリオ', Meiryo, sans-serif;
   font-size: 16px;
   font-weight: 100;
   word-spacing: 1px;
@@ -49,7 +51,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -59,10 +63,9 @@ body {
 }
 
 .container {
-
   >>> .globalNavi {
     transform: translateX(-100%);
-    transition: all .3s;
+    transition: all 0.3s;
 
     &--shown {
       transform: translateX(0);
@@ -89,7 +92,7 @@ body {
   padding: 1rem;
   position: fixed;
   right: 0;
-  text-shadow: 0 0px 1px rgba(0, 0, 0, .5);
+  text-shadow: 0 0px 1px rgba(0, 0, 0, 0.5);
   top: 0;
   z-index: 2;
 
@@ -105,14 +108,22 @@ body {
   width: 100%;
 
   &::after {
-    background: #00F260;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right bottom, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right bottom, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00f260; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right bottom,
+      #0575e6,
+      #00f260
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right bottom,
+      #0575e6,
+      #00f260
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     content: '';
     display: block;
     height: 100vh;
     left: 0;
-    opacity: .5;
+    opacity: 0.5;
     position: fixed;
     top: 0;
     width: 100%;
@@ -138,7 +149,6 @@ body {
   }
 
   &:not(.indexPage) {
-
     @media (min-width: 768px) {
       margin: 0 auto;
       max-width: calc(800px + 3rem);
@@ -152,7 +162,7 @@ body {
   &__title {
     font-size: 3rem;
     font-weight: bold;
-    letter-spacing: .25em;
+    letter-spacing: 0.25em;
     margin-bottom: 2rem;
     text-align: center;
     text-transform: uppercase;
@@ -172,8 +182,9 @@ body {
     }
   }
 
-  &-enter-active, &-leave-active {
-    transition: all .5s;
+  &-enter-active,
+  &-leave-active {
+    transition: all 0.5s;
   }
 
   &-enter {
@@ -193,9 +204,9 @@ body {
 
   li {
     border: 1px solid;
-    border-radius: .25em;
-    margin: 0 .5em .5em 0;
-    padding: .25em .5em;
+    border-radius: 0.25em;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.25em 0.5em;
   }
 }
 </style>
