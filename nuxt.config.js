@@ -69,6 +69,9 @@ module.exports = {
   ],
   axios: {
     debug: true,
-    baseURL: 'http://localhost:3000'
+    baseURL:
+      process.env.NODE_ENV === 'production'
+        ? 'https://yosuketanaka.net/'
+        : 'http://localhost:3000'
   }
 }
