@@ -66,5 +66,8 @@ module.exports = {
         id: 'UA-118743049-1'
       }
     ]
-  ]
+  ],
+  axios: {
+    baseURL: 'http://localhost:3000'
+  }
 }
