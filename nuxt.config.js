@@ -68,6 +68,7 @@ module.exports = {
     ]
   ],
   axios: {
+    debug: true,
     baseURL: 'http://localhost:3000'
   }
 }
