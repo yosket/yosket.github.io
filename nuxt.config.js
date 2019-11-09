@@ -4,8 +4,8 @@ if (process.env.NODE_ENV === 'production') {
 
 module.exports = {
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: 'Yosuke Tanaka - Freelance Web Developer in Tokyo, Japan',
     meta: [
@@ -46,16 +46,16 @@ module.exports = {
     ]
   },
   /*
-  ** Customize the progress bar color
-  */
+   ** Customize the progress bar color
+   */
   loading: { color: '#666', height: '4px' },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** Run ESLint on save
-    */
+     ** Run ESLint on save
+     */
   },
   modules: [
     '@nuxtjs/axios',

@@ -2,9 +2,11 @@
   <div class="container">
     <GlobalNavi :class="{ 'globalNavi--shown': isNaviShown }" />
     <div class="pageWrapper">
-      <video src="~assets/bg.mp4" loop muted autoplay playsinline/>
-      <button class="toggleNaviButton" @click="toggleNavi"><i class="fas fa-bars"/></button>
-      <nuxt/>
+      <video src="~assets/bg.mp4" loop muted autoplay playsinline />
+      <button class="toggleNaviButton" @click="toggleNavi">
+        <i class="fas fa-bars" />
+      </button>
+      <nuxt />
     </div>
   </div>
 </template>
@@ -34,7 +36,6 @@ export default {
   }
 }
 </script>
-
 
 <style lang="scss">
 html {

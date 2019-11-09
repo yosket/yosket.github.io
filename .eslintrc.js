@@ -24,6 +24,11 @@ module.exports = {
     "singleQuote": true,
     "no-console": "off",
     "vue/max-attributes-per-line": "off",
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "always",
+      }
+    }],
     "prettier/prettier": ["error", { "semi": false, "singleQuote": true }]
   }
 }

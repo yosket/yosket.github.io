@@ -1,0 +1,4 @@
+# Redirect default Netlify subdomain to primary domain
+https://yosket.netlify.com/* https://yosuketanaka.net/:splat 301!
+
+https://www.yosuketanaka.net/* https://yosuketanaka.net/:splat 301!

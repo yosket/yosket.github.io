@@ -3,7 +3,7 @@
     <header class="bland">
       <h1>
         <nuxt-link to="/">
-          <img src="~assets/photo.jpg" alt="Yosuke Tanaka">
+          <img src="~assets/photo.jpg" alt="Yosuke Tanaka" />
           <span>Web Developer</span>
           <span>Yosuke Tanaka</span>
         </nuxt-link>
@@ -18,7 +18,9 @@
       </ul>
     </nav>
     <footer class="footer">
-      <p><small>&copy; Yosuke Tanaka {{ new Date().getFullYear() }}</small></p>
+      <p>
+        <small>&copy; Yosuke Tanaka {{ new Date().getFullYear() }}</small>
+      </p>
     </footer>
   </div>
 </template>

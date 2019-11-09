@@ -3,7 +3,10 @@
     <h2 class="page__title">Works</h2>
     <div class="products">
       <div v-for="work in works" :key="work.name" class="product">
-        <img :src="require(`~/assets/products/${work.imageFileName}`)" :alt="work.name">
+        <img
+          :src="require(`~/assets/products/${work.imageFileName}`)"
+          :alt="work.name"
+        />
         <small>{{ work.year }}</small>
         <h3>{{ work.name }}</h3>
         <p>{{ work.description }}</p>

@@ -6,16 +6,24 @@
     </p>
     <ul class="contactList">
       <li>
-        <a href="mailto:yosket87@gmail.com"><i class="far fa-envelope"/></a>
+        <a href="mailto:yosket87@gmail.com">
+          <i class="far fa-envelope" />
+        </a>
       </li>
       <li>
-        <a href="https://github.com/yosket" target="_blank"><i class="fab fa-github"/></a>
+        <a href="https://github.com/yosket" target="_blank">
+          <i class="fab fa-github" />
+        </a>
       </li>
       <li>
-        <a href="https://twitter.com/yosket87" target="_blank"><i class="fab fa-twitter"/></a>
+        <a href="https://twitter.com/yosket87" target="_blank">
+          <i class="fab fa-twitter" />
+        </a>
       </li>
       <li>
-        <a href="https://www.facebook.com/yosuke.tanaka.87" target="_blank"><i class="fab fa-facebook"/></a>
+        <a href="https://www.facebook.com/yosuke.tanaka.87" target="_blank">
+          <i class="fab fa-facebook" />
+        </a>
       </li>
     </ul>
   </div>
